@@ -1,4 +1,11 @@
-async function searchPokemonFromInput() {
+// searchPokemon.js
+
+// Assuming the searchPokemonFromInput and other functions are defined here
+// ...
+
+async function searchPokemonFromInput(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
   const searchInput = document.getElementById("search-input");
   const searchTerm = searchInput.value.toLowerCase().trim();
 
@@ -24,6 +31,7 @@ async function searchPokemonFromInput() {
     errorMessage("Ocurrió un error al buscar el Pokémon.");
   }
 }
-const searchButton = document.getElementById("search-button");
 
-searchButton.addEventListener("click", searchPokemonFromInput);
+const searchForm = document.getElementById("search-form");
+
+searchForm.addEventListener("submit", searchPokemonFromInput);
