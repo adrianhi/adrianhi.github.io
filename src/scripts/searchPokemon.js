@@ -1,6 +1,6 @@
 async function searchPokemonFromInput() {
   const searchInput = document.getElementById("search-input");
-  const searchTerm = searchInput.value.trim();
+  const searchTerm = searchInput.value.toLowerCase().trim();
 
   if (searchTerm === "") {
     return;
