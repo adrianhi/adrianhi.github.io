@@ -1,10 +1,6 @@
-// searchPokemon.js
-
-// Assuming the searchPokemonFromInput and other functions are defined here
-// ...
 
 async function searchPokemonFromInput(event) {
-  event.preventDefault(); // Prevent the default form submission behavior
+  event.preventDefault(); 
 
   const searchInput = document.getElementById("search-input");
   const searchTerm = searchInput.value.toLowerCase().trim();
