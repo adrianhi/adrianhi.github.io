@@ -106,11 +106,9 @@ caption {
     text-align: center;
   }
 
-  .logo {
-    margin-bottom: 10px;
+  .logo ,.header{
+    margin: 10px 0px 10px 0px;
   }
 
-  .text-center {
-    margin-bottom: 10px;
-  }
+  
 }
